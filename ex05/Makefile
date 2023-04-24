@@ -6,11 +6,11 @@
 #    By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/12 13:54:54 by vstockma          #+#    #+#              #
-#    Updated: 2023/04/17 15:09:18 by vstockma         ###   ########.fr        #
+#    Updated: 2023/04/24 11:01:18 by vstockma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = phonebook
+NAME = harl
 
 SRC = main.cpp Harl.cpp
 

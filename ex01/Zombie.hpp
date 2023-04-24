@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:01:03 by vstockma          #+#    #+#             */
-/*   Updated: 2023/04/18 13:53:48 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/04/24 13:10:16 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ class Zombie
         void    announce(void);
         void    give_name(std::string new_name)
         {
-            this->name = new_name;
+            name = new_name;
         }
 };
 
