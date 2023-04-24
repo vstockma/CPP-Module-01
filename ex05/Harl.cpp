@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:09:01 by vstockma          #+#    #+#             */
-/*   Updated: 2023/04/24 11:01:21 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/04/24 15:36:52 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void    complain(std::string level)
 {
-    
 }
 
 void    debug(void)
