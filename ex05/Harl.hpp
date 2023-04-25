@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:08:29 by vstockma          #+#    #+#             */
-/*   Updated: 2023/04/24 11:01:20 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/04/25 13:17:58 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 # pragma once
 
 #include <iostream>
+#include <string>
+#include <cstring>
 
 class Harl
 {
@@ -27,5 +29,7 @@ class Harl
         void    warning(void);
         void    error(void);
 };
+
+typedef void (Harl::*t_func)(void);
 
 #endif
