@@ -1,18 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.hpp                                           :+:      :+:    :+:   */
+/*   loser.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:09:55 by vstockma          #+#    #+#             */
-/*   Updated: 2023/04/24 14:44:13 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/10/17 13:45:55 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_HPP
-# define MAIN_HPP
-# pragma once
+#ifndef LOSER_HPP
+# define LOSER_HPP
 
 #include <iostream>
 #include <string>
@@ -21,15 +20,17 @@
 
 class Loser
 {
-    public:
+    private:
         std::string s1;
         std::string s2;
-        Loser(char **av)
-        {
-            s1 = av[2];
-            s2 = av[3];
-        }
+    public:
+        Loser(char **av);
         Loser();
-    std::string    replace(Loser *loser, std::string& input);
+        ~Loser();
+        void    setString(char **av);
+        std::string getString(int i);
 };
+
+std::string    replace(char **av, std::string& input);
+
 #endif

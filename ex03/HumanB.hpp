@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:05:56 by vstockma          #+#    #+#             */
-/*   Updated: 2023/04/18 15:17:32 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/10/17 11:19:24 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,18 @@
 # pragma once
 
 #include <iostream>
+#include "Weapon.hpp"
 
 class HumanB
 {
+    private:
+        std::string _name;
+        Weapon *_weapon;
     public:
-        std::string name;
-        std::string weapon;
+        HumanB(std::string name);
+        ~HumanB();
         void    attack();
+        void    setWeapon(Weapon& weapon);
 };
 
 #endif

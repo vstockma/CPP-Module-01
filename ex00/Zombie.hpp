@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 14:57:52 by vstockma          #+#    #+#             */
-/*   Updated: 2023/04/18 12:43:09 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/10/19 13:41:31 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,10 @@
 class Zombie
 {
     private:
-        std::string name;
+        std::string _name;
     public:
-        Zombie(std::string name)
-        {
-            this->name = name;
-	        std::cout << this->name << ": ";
-        }
-        ~Zombie(void)
-        {
-            std::cout << "Zombie " << this->name << " destroyed" << std::endl;
-        }
+        Zombie(std::string name);
+        ~Zombie(void);
         void    announce(void);
 };
 

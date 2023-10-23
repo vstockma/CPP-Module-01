@@ -6,13 +6,12 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:08:29 by vstockma          #+#    #+#             */
-/*   Updated: 2023/04/25 13:17:58 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/10/17 13:53:10 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HARL_HPP
 # define HARL_HPP
-# pragma once
 
 #include <iostream>
 #include <string>
@@ -20,14 +19,13 @@
 
 class Harl
 {
-    public:
-        void    complain(std::string level);
-
     private:
         void    debug(void);
         void    info(void);
         void    warning(void);
         void    error(void);
+    public:
+        void    complain(std::string level);
 };
 
 typedef void (Harl::*t_func)(void);
